@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -29,6 +29,7 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sm6150
 TARGET_NO_BOOTLOADER := true
+MSMSTEPPE := sm6150
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
@@ -212,6 +213,7 @@ include device/qcom/sepolicy/sepolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # WiFi
 BOARD_HOSTAPD_DRIVER := NL80211
