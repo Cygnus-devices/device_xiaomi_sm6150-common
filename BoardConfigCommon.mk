@@ -8,6 +8,8 @@ BOARD_VENDOR := xiaomi
 
 COMMON_PATH := device/xiaomi/sm6150-common
 
+PRODUCT_VENDOR_MOVE_ENABLED := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
